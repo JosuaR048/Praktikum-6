@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+        <ul class="navbar-nav">
+            <h4>PT.Once Sejahtera</h4>
+            <a>
+                <img src="https://s.kaskus.id/r480x480/images/fjb/2015/04/16/jasa_pembuatan_desain_logo_perusahaan_murah_tidak_murahan_1157447_1429123045.JPG"
+                    class="rounded-circle" height="22" alt="Logo" loading="lazy" />
+            </a>
+        </ul>
+    </div>
+</nav>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="column mx-auto">
+                <table border="4">
+                    <thead>
+                        <tr>
+                            <th>Nama Pelanggan</th>
+                            <td><input type="text" name="pelanggan" id="nama_pelanggan"></td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>Kategori</th>
+                            <td colspan="2">
+                                <select id="kategoriList">
+                                    <option value="Sosial">Sosial</option>
+                                    <option value="Rumah">Rumah</option>
+                                    <option value="Apartemen">Apartemen</option>
+                                    <option value="Industri">Industri</option>
+                                    <option value="Villa">Villa</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>Hari Pemakaian</th>
+                            <td colspan="2"><input type="number" id="hari" name="hari" min="" max="30"></td>
+                        </tr>
+                        <tr id="button">
+                            <td colspan="2"><input type="button" name="button" id="button" value="Calculate"
+                                    onclick="hitung()"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="column">
+
+                <h2>Rincian Tagihan</h2>
+
+                <table class="styled-table">
+                    <thead>
+                        <tr>
+                            <th>Jumlah</th>
+                            <th>Tarif per KWH</th>
+                            <th>Abodemen</th>
+                            <th>Sub-Total</th>
+                        </tr>
+                    </thead>
+                    <tbody id="hasil">
+                        <tr>
+                            <td>Jumlah</td>
+                            <td>Tarif per-KWH</td>
+                            <td>Abodemen</td>
+                            <td>Subtotal</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="column">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Subtotal</th>
+                            <td id="sub"></td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>Pajak</th>
+                            <td id="pajak"></td>
+                        </tr>
+                        <tr>
+                            <th>Bayar</th>
+                            <td id="bayar"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
